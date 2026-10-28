@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" fill="none">
+  <rect width="800" height="600" fill="#F0F8FF"/>
+  <rect x="40" y="40" width="720" height="520" rx="16" fill="#0B3B6E" fill-opacity="0.04" stroke="#0A7BDB" stroke-width="2" stroke-dasharray="8 8"/>
+  <circle cx="400" cy="270" r="50" fill="#0A7BDB" fill-opacity="0.1"/>
+  <path d="M400 240L415 270L400 300L385 270Z" fill="#0A7BDB"/>
+  <text x="400" y="360" text-anchor="middle" fill="#0B3B6E" font-family="system-ui, sans-serif" font-size="22" font-weight="700" letter-spacing="1">ROADTRIP PLACEHOLDER IMAGE</text>
+  <text x="400" y="390" text-anchor="middle" fill="#5B6B7B" font-family="system-ui, sans-serif" font-size="14">Asset Placeholder (800x600)</text>
+</svg>

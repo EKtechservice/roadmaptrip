@@ -1,26 +1,56 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@config "../../tailwind.config.ts";
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-brand-navy: #0B3B6E;
+  --color-brand-blue: #0A7BDB;
+  --color-brand-blue-dark: #0A57A3;
+  --color-brand-blue-light: #0A94F0;
+  --color-brand-sky: #F0F8FF;
+  --color-brand-ink: #0A0A0A;
+  --color-brand-muted: #5B6B7B;
+
+  --radius-button: 8px;
+  --radius-card: 16px;
+
+  --font-sans: var(--font-outfit), sans-serif;
+  --font-script: var(--font-script), cursive;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@utility bg-brand-gradient {
+  background-image: linear-gradient(90deg, #0A57A3 0%, #0A94F0 100%);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  color: #0A0A0A;
+  font-family: var(--font-outfit), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Selection highlight in brand blue */
+::selection {
+  background-color: #0A7BDB;
+  color: #ffffff;
+}
+
+/* Accessibility: Reduced Motion handling */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
