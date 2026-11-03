@@ -13,7 +13,7 @@ import CTA from "@/components/sections/CTA";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white font-sans text-brand-ink">
+    <div className="min-h-screen bg-white font-sans text-brand-ink overflow-x-hidden">
       <Navbar />
 
       <main>

@@ -16,7 +16,7 @@ export function Container({
   return (
     <Component
       className={clsx(
-        "mx-auto w-full max-w-[1200px] px-6 md:px-14",
+        "mx-auto w-full max-w-[1200px] px-4 sm:px-6 md:px-14",
         className
       )}
       {...props}

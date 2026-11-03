@@ -234,7 +234,17 @@ export default function Testimonials() {
                 initial={reduced ? undefined : "enter"}
                 animate={reduced ? undefined : "center"}
                 exit={reduced ? undefined : "exit"}
-                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+                drag="x"
+                dragConstraints={{ left: 0, right: 0 }}
+                dragElastic={0.2}
+                onDragEnd={(_, info) => {
+                  if (info.offset.x < -40) {
+                    next();
+                  } else if (info.offset.x > 40) {
+                    prev();
+                  }
+                }}
+                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 cursor-grab active:cursor-grabbing"
               >
                 {/* Desktop: 3 cards; tablet: 2; mobile: 1 */}
                 {visibleIndices.map((tIdx, slot) => (

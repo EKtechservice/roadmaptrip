@@ -168,7 +168,7 @@ export default function CTA() {
                       }}
                       placeholder="Enter your email address..."
                       aria-label="Email address for a free quote"
-                      className="w-full bg-transparent px-5 py-3 text-sm text-white placeholder-white/75 focus:outline-none"
+                      className="w-full bg-transparent px-5 py-3 text-base sm:text-sm text-white placeholder-white/75 focus:outline-none"
                     />
 
                     <button

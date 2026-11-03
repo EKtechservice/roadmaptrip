@@ -322,7 +322,7 @@ export function EmploymentJapan() {
             </div>
 
             {/* Three Trust Badges Beneath Card */}
-            <div className="mt-5 flex items-center justify-between text-xs text-white/75 px-3">
+            <div className="mt-5 flex flex-wrap items-center justify-between gap-2 text-xs text-white/75 px-3">
               <div className="flex items-center gap-1.5">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
                 <span>Verified employers</span>

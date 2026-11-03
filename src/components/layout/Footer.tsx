@@ -127,7 +127,7 @@ function BackToTop() {
           exit={{ opacity: 0, scale: 0.8, y: 12 }}
           transition={{ duration: 0.2 }}
           aria-label="Back to top"
-          className="fixed bottom-6 right-6 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-brand-blue text-white shadow-2xl hover:bg-brand-blueDark hover:scale-105 active:scale-95 transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white border border-white/20 cursor-pointer"
+          className="fixed bottom-[calc(1.5rem+env(safe-area-inset-bottom))] right-6 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-brand-blue text-white shadow-2xl hover:bg-brand-blueDark hover:scale-105 active:scale-95 transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white border border-white/20 cursor-pointer"
         >
           <ArrowUp size={20} strokeWidth={2.5} />
         </motion.button>
@@ -244,7 +244,7 @@ export default function Footer() {
                   onChange={(e) => setNewsletterEmail(e.target.value)}
                   placeholder="Your email address"
                   aria-label="Subscribe to newsletter"
-                  className="w-full bg-white/10 text-white placeholder-slate-400 text-xs px-3.5 py-2.5 rounded-lg border border-white/15 focus:outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue pr-10 transition-colors"
+                  className="w-full bg-white/10 text-white placeholder-slate-400 text-base sm:text-xs px-3.5 py-2.5 rounded-lg border border-white/15 focus:outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue pr-10 transition-colors"
                   required
                 />
                 <button
