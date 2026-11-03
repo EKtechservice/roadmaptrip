@@ -6,6 +6,7 @@ export interface SectionHeadingProps {
   title: string;
   subtitle?: string;
   align?: "center" | "left";
+  centered?: boolean;
   theme?: "light" | "dark";
   className?: string;
 }
@@ -15,10 +16,11 @@ export function SectionHeading({
   title,
   subtitle,
   align = "center",
+  centered,
   theme = "light",
   className,
 }: SectionHeadingProps) {
-  const isCenter = align === "center";
+  const isCenter = centered !== undefined ? centered : align === "center";
   const isDark = theme === "dark";
 
   return (

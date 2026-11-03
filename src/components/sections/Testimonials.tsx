@@ -7,7 +7,7 @@ import {
   useCallback,
   KeyboardEvent,
 } from "react";
-import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
+import { motion, AnimatePresence, useReducedMotion, type Variants } from "framer-motion";
 import { ChevronLeft, ChevronRight, Star, Quote } from "lucide-react";
 import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
@@ -140,7 +140,7 @@ function TestimonialCard({ t }: { t: Testimonial }) {
 }
 
 /* ── Carousel ────────────────────────────────────────────────────── */
-const SLIDE_VARIANTS = {
+const SLIDE_VARIANTS: Variants = {
   enter: (dir: number) => ({
     x: dir > 0 ? 60 : -60,
     opacity: 0,
